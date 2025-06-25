@@ -1,16 +1,18 @@
 body {
-  font-family: sans-serif;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+   font-family: sans-serif;
+  /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2); */
   display: flex;
   justify-content: center;
   padding: 50px;
+  background-color: #FFF7E6;
 }
 
 .container {
   background: white;
   padding: 20px 30px;
   border-radius: 10px;
-  width: 300px;
+  width: 50%;
+  height: 50vh;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
@@ -48,4 +50,32 @@ li button {
   padding: 5px 8px;
   cursor: pointer;
   border-radius: 3px;
+}
+
+
+@media (max-width: 576px) {
+  h1{
+    font-size: 4rem;
+  }
+  .container{
+    width: 85%;
+    height: 30vh;
+  }
+  #taskInput {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  border: 1px solid black;
+}
+#addTaskBtn{
+  font-size: 2rem;
+}
+li{
+  font-size: 3rem;
+}
+li button{
+  font-size: 3rem;
+  border-radius: 5px;
+}
 }
